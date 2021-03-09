@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#430C0505"
+    tools:context=".DataActivity">
+
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="50dp"
+        android:text="Nombre" />
+    <TextView
+        android:id="@+id/tvSurname"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="100dp"
+        android:text="Apellido" />
+    <TextView
+        android:id="@+id/tvGender"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="150dp"
+        android:text="Genero" />
+    <TextView
+        android:id="@+id/tvStudent"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="200dp"
+        android:text="Es estudiante" />
+</FrameLayout>
