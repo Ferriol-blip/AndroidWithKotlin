@@ -1,8 +1,7 @@
 package es.ferriolblip.consumiendoapi
 
-import android.os.Binder
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import es.ferriolblip.consumiendoapi.databinding.ActivityMainBinding
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
