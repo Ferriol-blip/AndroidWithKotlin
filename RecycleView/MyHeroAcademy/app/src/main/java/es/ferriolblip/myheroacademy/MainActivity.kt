@@ -2,8 +2,14 @@ package es.ferriolblip.myheroacademy
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.LayoutInflater
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import es.ferriolblip.myheroacademy.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
 
     var superHeros: List<SuperHero> = listOf(
     SuperHero("Spiderman", "Marvel", "Peter Parker", "https://cursokotlin.com/wp-content/uploads/2017/07/spiderman.jpg"),
@@ -18,7 +24,14 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        initRecycle()
+    }
 
+    fun initRecycle(){
+        binding.recycleHero.layoutManager = LinearLayoutManager(this)
+        val adapter = HeroAdapter(superHeros)
+        binding.recycleHero.adapter = adapter
     }
 }
