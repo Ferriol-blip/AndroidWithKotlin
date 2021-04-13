@@ -15,21 +15,30 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/tvRealName"
+            android:id="@+id/text_realName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:textSize="15sp"
             tools:text="Peter Parker" />
 
         <TextView
-            android:id="@+id/tvSuperHeroName"
+            android:id="@+id/text_super_hero_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:textSize="15sp"
             tools:text="Spiderman" />
 
         <TextView
-            android:id="@+id/tvPublisher"
+            android:id="@+id/text_publisher"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:textSize="15sp"
             tools:text="Marvel" />
 
     </LinearLayout>
