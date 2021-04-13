@@ -27,3 +27,4 @@ Uso básico de Android con Kotlin
 		* GuideLine -> Permite configurar una linea imaginaria para enganchar.
 
 			* constraintGuide_percent -> para colocar la linea imaginaria
+* RecycleView with ViewBinding
